@@ -1,4 +1,4 @@
-COMANDOS DDL
+# COMANDOS DDL
 <br> CREATE – comando para criar banco de dados,
 tabelas e outros objetos em um BD. </br>
 
@@ -8,9 +8,10 @@ de tabelas ou outro objeto em um BD. <br>
 <br> DROP – comando usado para apagar banco de
 dados, tabelas e outros objetos. <br>
 
--CREATE TABLE
-![alt text](/Aula_Table/assets/imagecreate.png)
+- CREATE TABLE
 
--ALTER TABLE
-![alt text](/Aula_Table/assets/imagealter.png)
+
+
+- ALTER TABLE
+
 
