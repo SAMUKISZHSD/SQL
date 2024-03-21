@@ -2,10 +2,10 @@
 
 -- tabela base:
 CREATE TABLE alunos (
- rgm_alu INTEGER PRIMARY KEY,
- nome_alu VARCHAR (50),
- endereco_alu VARCHAR (50),
- celular VARCHAR (50)
+  rgm_alu INTEGER PRIMARY KEY,
+  nome_alu VARCHAR (50),
+  endereco_alu VARCHAR (50),
+  celular VARCHAR (50)
 		
 );
 
