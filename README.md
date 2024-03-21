@@ -1,4 +1,5 @@
 # SQL "Structured Query Language"
+
 Linguagem de Consulta Estruturada
 <br> Linguagem padrão dos Bancos de dados relacionais </br>
 
