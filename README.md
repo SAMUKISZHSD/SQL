@@ -9,3 +9,5 @@ Linguagem de Consulta Estruturada
 -  DDL – Linguagem de Definição de Dados
 -  DCL – Linguagem de Controle de Dados
 -  DTL – Linguagem de Transação de Dados
+
+  <img width="49%" src="https://lh6.googleusercontent.com/N3nCjYeLaw030Jy9key4fOaAu_LKnzp8RCOmLlumwp0tc-hymIycnbzuhQXlisl-uo0hbTCzo7_QU3gTxBpqbaU5op08D_7ib4MHQJPhqbHAyjFsE8tVZLoZrYZ69P2Ick_LU6Mc" /> 
