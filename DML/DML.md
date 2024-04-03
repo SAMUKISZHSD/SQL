@@ -1,9 +1,13 @@
 # Comandos DML
-A linguagem de manipulação de dados, mais conhecida como DML é um grupo de comandos dentro da linguagem SQL que é utilizada para inclusão, remoção e modificar o conteúdo das tabelas em um banco de dados, seus principais comandos são: INSERT, UPDATE, SELECT e DELETE.
+A linguagem de manipulação de dados, mais conhecida como DML é um grupo de comandos dentro da linguagem SQL que é utilizada para inclusão, remoção e modificar o conteúdo das tabelas em um banco de dados, seus principais comandos são: 
+<br> **INSERT, UPDATE, SELECT e DELETE.** </br>
+
+# 
 
 **SELECT**
 <br> Comando utilizado para recuperar as informações armazenadas em um banco de dados </br>
 *SELECT * FROM Clientes;*
+
 
 **INSERT**
 <br> É o comando utilizado para inserir registros em uma tabela já existente no seu banco de dados. </br>
