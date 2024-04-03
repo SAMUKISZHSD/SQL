@@ -10,11 +10,11 @@ dados, tabelas e outros objetos. <br>
 
 <div>
 <h1> CREATE TABLE </h1>
-  <img src='https://raw.githubusercontent.com/SAMUKISZHSD/SQL/main/TABLE/assets/imagecreate.png' width="75%" />
+  <img src='https://raw.githubusercontent.com/SAMUKISZHSD/SQL/main/DDL/assets/imagecreate.png' width="75%" />
 </div>
 
 <div>
  <h1> ALTER TABLE </h1>
-  <img src='https://raw.githubusercontent.com/SAMUKISZHSD/SQL/main/TABLE/assets/imagealter.png' width="75%" />
+  <img src='https://raw.githubusercontent.com/SAMUKISZHSD/SQL/main/DDL/assets/imagealter.png' width="75%" />
   </div>
 
