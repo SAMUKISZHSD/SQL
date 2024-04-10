@@ -5,7 +5,7 @@
 CREATE TABLE Aluno (
 id_aluno integer PRIMARY KEY,
 nome varchar(50),
-email varchar
+email varchar(50)
 
 );
 
@@ -69,7 +69,7 @@ INSERT INTO Disciplina (id_disciplina, nome, ementa, creditos) VALUES (3, 'Gest�
 -- Alterações de Dados
 UPDATE Aluno SET email = 'mariafernandes@gmail.com' WHERE id_aluno = 1;
 
-UPDATE Curso SET carga_horaria = '3800' WHERE id_curso = 1;
+UPDATE Curso SET carga_horaria = 3800 WHERE id_curso = 1;
 
 UPDATE Disciplina SET nome = 'Sistema de Banco de Dados' WHERE id_disciplina = 1;
 
