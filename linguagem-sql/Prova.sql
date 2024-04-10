@@ -1,55 +1,80 @@
--- Entidades: Cliente, Pedido, Prato, Ingrediente
+-- Dominio 2
+--Entidades: Aluno, Curso, Professor, Disciplina
 
--- create cliente
-CREATE TABLE cliente (
-id_cliente integer PRIMARY KEY,
-nome varchar (50),
-telefone int 
+-- create aluno
+CREATE TABLE Aluno (
+id_aluno integer PRIMARY KEY,
+nome varchar(50),
+email varchar
+
 );
 
--- create pedido
-CREATE TABLE pedido (
-id_pedido integer PRIMARY KEY
-data data (50),
-valor_total numeric (5,2),
-id_cliente integer,
+-- create curso
+CREATE TABLE Curso (
+id_curso integer PRIMARY KEY,
+nome varchar(50),
+carga_horaria int
 
-CONSTRAINT id_clienteFK FOREIGN KEY (id_cliente)
-REFERENCES cliente (id_cliente)
- 
 );
 
--- create prato
-CREATE TABLE prato (
-id_prato integer PRIMARY KEY
-nome varchar (50),
-preco numeric (5,2)
+-- create professor
+CREATE TABLE Professor (
+id_professor integer PRIMARY KEY,
+nome varchar(50),
+departamento varchar(50)
+
 );
 
--- create ingredientes
-CREATE TABLE ingrediente (
-nome varchar (50),
-quantidade int -- talvez seja interger enves de int
+-- create disciplina
+CREATE TABLE Disciplina (
+id_disciplina integer PRIMARY KEY,
+nome varchar(50),
+ementa varchar(50)
+
 );
 
 
--- adicionar endereço na tabela cliente
-ALTER TABLE cliente ADD COLUMN endereco varchar;
+-- Dominio 2
 
--- adicionar categoria na tabela prato
-ALTER TABLE prato ADD COLUMN categoria varchar;
+-- adicionar data_nascimento na tabela aluno
+ALTER TABLE Aluno ADD COLUMN data_nascimento date;
 
---atualizar o telefone do cliente pedro santos para '11998765432'
-UPDATE cliente SET telefone = ‘11998765432r’ WHERE 1;
+-- adicionar creditos na tabela disciplina
+ALTER TABLE Disciplina ADD COLUMN creditos int;
 
--- alterar o valor total do pedido 1 para 50.00
-UPDATE pedido SET valor_total = ‘50.00’ WHERE 1;
+-- Dominio 2
 
--- atualizar o preço da pizza margherita para 32.00
-UPDATE prato SET preco = ‘32.00’ WHERE 1;
+-- Alunos
+INSERT INTO Aluno (id_aluno, nome, email, data_nascimento) VALUES (1, 'Maria Fernandes', 'maria@gmail.com', '1992-08-12');
+INSERT INTO Aluno (id_aluno, nome, email, data_nascimento) VALUES (2, 'João Pedro', 'joaopedro@gmail.com', '1993-05-19');
+INSERT INTO Aluno (id_aluno, nome, email, data_nascimento) VALUES (3, 'Ana Carolina', 'anacarolina@gmail.com', '1991-12-07');
 
--- deletar cliente rafael souza
-DELETE FROM clientes WHERE id_cliente = 3;
+-- Cursos
+INSERT INTO Curso (id_curso, nome, carga_horaria) VALUES (1, 'Ciências da Computação', 3600);
+INSERT INTO Curso (id_curso, nome, carga_horaria) VALUES (2, 'Engenharia Elétrica', 3800);
+INSERT INTO Curso (id_curso, nome, carga_horaria) VALUES (3, 'Administração', 3400);
 
--- deletar prato com salada caesar
-DELETE FROM prato WHERE id_prato = 3;
+
+-- Professor
+INSERT INTO Professor (id_professor, nome, departamento) VALUES (1, 'Carlos Andrade', 'Informática');
+INSERT INTO Professor (id_professor, nome, departamento) VALUES (2, 'Maria Oliveira', 'Elétrica');
+INSERT INTO Professor (id_professor, nome, departamento) VALUES (3, 'Roberto Almeida', 'Administração');
+
+-- Disciplina
+INSERT INTO Disciplina (id_disciplina, nome, ementa, creditos) VALUES (1, 'Banco de Dados', 'Introdução a SGDB', 4);
+INSERT INTO Disciplina (id_disciplina, nome, ementa, creditos) VALUES (2, 'Circuitos Elétricos', 'Fundamentos', 5);
+INSERT INTO Disciplina (id_disciplina, nome, ementa, creditos) VALUES (3, 'Gestão Financeira', 'Conceitos Básicos', 3);
+
+
+-- Alterações de Dados
+UPDATE Aluno SET email = 'mariafernandes@gmail.com' WHERE id_aluno = 1;
+
+UPDATE Curso SET carga_horaria = '3800' WHERE id_curso = 1;
+
+UPDATE Disciplina SET nome = 'Sistema de Banco de Dados' WHERE id_disciplina = 1;
+
+
+-- Deletar
+DELETE FROM Aluno WHERE id_aluno = 2;
+
+DELETE FROM Curso WHERE id_curso = 3;
