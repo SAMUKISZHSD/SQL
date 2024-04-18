@@ -6,14 +6,16 @@
 <br> Retrona o número de linhas de uma tabela</br>
 
 ```
-  SELECT * FROM Clientes;
+select count(*) from produtos;
+select count (nome) from produtos;
 ```
 
 - SUM( )
 <br>Devolve a soma</br>
 
 ```
-  SELECT * FROM Clientes;
+ -- qual o valor total de produtos cadastrados?
+select sum(valor) as valor_total from produtos;
 ```
 
 
@@ -21,7 +23,8 @@
 <br>Retorna o maior valor</br>
 
 ```
-  SELECT * FROM Clientes;
+-- qual é o produto mais caro na tabela ?
+select max(valor) as valor_maximo from produtos;
 ```
 
 
@@ -29,14 +32,16 @@
 <br>Retorna o menor valor</br>
 
 ```
-  SELECT * FROM Clientes;
+-- qual o produto de menor valor
+select min(valor) as valor_minimo from produtos;
 ```
 
 - AVG( )
 <br>Retorna o valor médio</br>
 
 ```
-  SELECT * FROM Clientes;
+-- qual é o preço médio dos produtos?
+select avg(valor) as media from produtos;
 ```
 
 
