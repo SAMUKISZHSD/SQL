@@ -14,7 +14,7 @@ select count (nome) from produtos;
 <br>Devolve a soma</br>
 
 ```
- -- qual o valor total de produtos cadastrados?
+-- qual o valor total de produtos cadastrados?
 select sum(valor) as valor_total from produtos;
 ```
 
@@ -53,7 +53,8 @@ aparecer após a cláusula GROUP BY separados por vírgula, ou você terá um er
 de sintaxe na consulta. </br>
 
 ```
-  SELECT * FROM Clientes;
+-- queremos saber quantas pessoas visitaram o museu em cada dia
+SELECT date, COUNT(*) AS num_visits FROM visita GROUP BY date;
 ```
 
 - HAVING
@@ -65,5 +66,6 @@ agregadas. Neste caso, usamos a cláusula HAVING para fazer esta filtragem
 posterior </br>
 
 ```
-  SELECT * FROM Clientes;
+-- Vamos encontrar os dias em que o preço médio do ingresso foi superior a $5
+SELECT date, AVG(price) AS media_preco FROM visita GROUP BY date HAVING media_preco > 5;
 ```
